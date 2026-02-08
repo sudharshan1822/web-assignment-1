@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Programs - STS Heavy Machinery</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Intro Section with Background Image */
+        .intro-section {
+            background: url('./image/image4.jpeg') no-repeat center top;
+            background-size: cover;
+            background-position: center 50%;
+            position: relative;
+            color: white;
+        }
+
+        .intro-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .intro-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Uniform Card Styling */
+        .training-card {
+            background-color: white;
+            color: black;
+            border-radius: 0.5rem;
+            border: 1px solid #ddd;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s;
+        }
+
+        .training-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .training-card .card-body {
+            flex-grow: 1;
+        }
+
+        .training-card button {
+            background-color: #343a40; /* Dark Button Matching Navbar */
+            color: white;
+            border: none;
+        }
+
+        .training-card button:hover {
+            background-color: #23272b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">STS Heavy Machinery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="training.html">Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rental.html">Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= INTRO SECTION ================= -->
+    <section class="intro-section py-5 text-center">
+        <div class="container">
+            <h2 class="mb-3">Heavy Machinery Training Programs</h2>
+            <p class="lead">
+                Certified training programs designed to ensure safety and professional machine operation.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= TRAINING CARDS ================= -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Excavator -->
+                <div class="col-md-4">
+                    <div class="card training-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Excavator Operator Training</h5>
+                            <p class="card-text">Learn safe excavation techniques and site operation procedures.</p>
+                            <ul>
+                                <li>Duration: 2 Weeks</li>
+                                <li>Certification Included</li>
+                                <li>Practical & Theory Sessions</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center">
+                            <a href="excavator.html" class="btn btn-dark w-75">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crane -->
+                <div class="col-md-4">
+                    <div class="card training-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Crane Operator Certification</h5>
+                            <p class="card-text">Comprehensive crane handling and lifting safety training.</p>
+                            <ul>
+                                <li>Duration: 3 Weeks</li>
+                                <li>Licensed Instructor</li>
+                                <li>Final Assessment Test</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center">
+                            <a href="crane.html" class="btn btn-dark w-75">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forklift -->
+                <div class="col-md-4">
+                    <div class="card training-card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Forklift Operation Training</h5>
+                            <p class="card-text">Warehouse and construction forklift handling program.</p>
+                            <ul>
+                                <li>Duration: 1 Week</li>
+                                <li>Hands-on Practice</li>
+                                <li>Safety Compliance</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center">
+                            <a href="forklift.html" class="btn btn-dark w-75">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TRAINING FEES TABLE ================= -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Training Fees</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Course</th>
+                            <th>Duration</th>
+                            <th>Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Excavator Training</td>
+                            <td>2 Weeks</td>
+                            <td>$800</td>
+                        </tr>
+                        <tr>
+                            <td>Crane Certification</td>
+                            <td>3 Weeks</td>
+                            <td>$1200</td>
+                        </tr>
+                        <tr>
+                            <td>Forklift Training</td>
+                            <td>1 Week</td>
+                            <td>$500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 STS Heavy Machinery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
